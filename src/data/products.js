@@ -60,7 +60,7 @@ const products = [
     category: 'Gaming Desktop',
     seller: 'Amazon',
     image:
-      'https://images.unsplash.com/photo-1614624532983-4ce03382d20a?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1587831990711-23ca6441447b?w=400&h=400&fit=crop',
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const products = [
     category: 'Gaming Desktop',
     seller: 'Amazon',
     image:
-      'https://images.unsplash.com/photo-1600861194802-a2b11037db05?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1616763355548-1b606f439f86?w=400&h=400&fit=crop',
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ const products = [
     category: 'Gaming Desktop',
     seller: 'Amazon',
     image:
-      'https://images.unsplash.com/photo-1587202372160-effd85a1b9da?w=400&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?w=400&h=400&fit=crop',
   },
 ]
 
