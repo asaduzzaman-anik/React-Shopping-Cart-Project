@@ -1,0 +1,69 @@
+:root {
+  --header-bg: #131921;
+  --header-bg-secondary: #232f3e;
+  --accent-yellow: #febd69;
+  --accent-yellow-hover: #f3a847;
+  --btn-yellow: #ffd814;
+  --btn-yellow-hover: #f7ca00;
+  --btn-yellow-border: #fcd200;
+  --link-blue: #007185;
+  --link-blue-hover: #c7511f;
+  --price-red: #b12704;
+  --text: #0f1111;
+  --text-muted: #565959;
+  --bg: #eaeded;
+  --bg-white: #ffffff;
+  --border: #d5d9d9;
+  --shadow: 0 2px 5px rgba(15, 17, 17, 0.15);
+
+  --sans: 'Amazon Ember', Arial, Helvetica, sans-serif;
+
+  font-family: var(--sans);
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--text);
+  background-color: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
