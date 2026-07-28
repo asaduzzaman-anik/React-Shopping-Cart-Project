@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
+import CartDrawer from './components/CartDrawer'
 import Toast from './components/Toast'
 import Home from './pages/Home'
 import Cart from './pages/Cart'
@@ -11,6 +12,7 @@ let toastId = 0
 function App() {
   const [cart, setCart] = useState([])
   const [toasts, setToasts] = useState([])
+  const [isCartDrawerOpen, setIsCartDrawerOpen] = useState(false)
   const toastTimers = useRef(new Map())
 
   const removeToast = (id) => {
@@ -79,7 +81,20 @@ function App() {
 
   return (
     <>
-      <Header cartCount={totalItems} />
+      <Header
+        cartCount={totalItems}
+        onCartClick={() => setIsCartDrawerOpen(true)}
+      />
+      <CartDrawer
+        isOpen={isCartDrawerOpen}
+        onClose={() => setIsCartDrawerOpen(false)}
+        cart={cart}
+        totalItems={totalItems}
+        totalPrice={totalPrice}
+        onIncrease={increaseQty}
+        onDecrease={decreaseQty}
+        onRemove={removeFromCart}
+      />
       <Toast toasts={toasts} onClose={removeToast} />
       <main className="main">
         <Routes>

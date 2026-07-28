@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-function Header({ cartCount }) {
+function Header({ cartCount, onCartClick }) {
   return (
     <header className="header">
       <div className="header__inner">
@@ -72,10 +72,11 @@ function Header({ cartCount }) {
           <span className="header__line-bottom">&amp; Orders</span>
         </div>
 
-        <Link
-          to="/cart"
+        <button
+          type="button"
           className="header__cart"
           aria-label={`Cart, ${cartCount} items`}
+          onClick={onCartClick}
         >
           <div className="header__cart-icon">
             <svg viewBox="0 0 40 32" fill="none" aria-hidden="true">
@@ -92,7 +93,7 @@ function Header({ cartCount }) {
             <span className="header__cart-count">{cartCount}</span>
           </div>
           <span className="header__cart-label">cart</span>
-        </Link>
+        </button>
       </div>
     </header>
   )
