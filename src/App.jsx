@@ -71,6 +71,12 @@ function App() {
 
   const removeFromCart = (id) => {
     setCart((prev) => prev.filter((item) => item.id !== id))
+    showToast('Product has been removed from cart successfully')
+  }
+
+  const clearCart = () => {
+    setCart([])
+    showToast('Cart has been cleared successfully')
   }
 
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0)
@@ -109,6 +115,7 @@ function App() {
                 onIncrease={increaseQty}
                 onDecrease={decreaseQty}
                 onRemove={removeFromCart}
+                onClearCart={clearCart}
               />
             }
           />

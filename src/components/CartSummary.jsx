@@ -8,6 +8,29 @@ function CartSummary({ totalItems, totalPrice }) {
       <p className="cart-summary__total">
         Subtotal: <strong>${totalPrice.toFixed(2)}</strong>
       </p>
+
+      <form
+        className="cart-summary__promo"
+        onSubmit={(e) => e.preventDefault()}
+      >
+        <label htmlFor="promo-code" className="cart-summary__promo-label">
+          Promo code
+        </label>
+        <div className="cart-summary__promo-row">
+          <input
+            id="promo-code"
+            type="text"
+            name="promoCode"
+            placeholder="Enter code"
+            className="cart-summary__promo-input"
+            autoComplete="off"
+          />
+          <button type="submit" className="cart-summary__promo-btn">
+            Apply
+          </button>
+        </div>
+      </form>
+
       <button type="button" className="cart-summary__checkout">
         Proceed to checkout
       </button>

@@ -5,28 +5,11 @@ function Header({ cartCount, onCartClick }) {
     <header className="header">
       <div className="header__inner">
         <Link to="/" className="header__logo" aria-label="Amazon home">
-          <span className="header__logo-text">amazon</span>
-          <svg
-            className="header__logo-arrow"
-            viewBox="0 0 100 12"
-            aria-hidden="true"
-          >
-            <path
-              d="M2 2 Q50 18 98 2"
-              fill="none"
-              stroke="#febd69"
-              strokeWidth="3"
-              strokeLinecap="round"
-            />
-            <path
-              d="M88 1 L98 2 L90 8"
-              fill="none"
-              stroke="#febd69"
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+          <img
+            className="header__logo-img"
+            src="/images/amazon-logo.png"
+            alt="Amazon"
+          />
         </Link>
 
         <div className="header__deliver" tabIndex={0}>
@@ -92,7 +75,7 @@ function Header({ cartCount, onCartClick }) {
             </svg>
             <span className="header__cart-count">{cartCount}</span>
           </div>
-          <span className="header__cart-label">cart</span>
+          <span className="header__cart-label">Cart</span>
         </button>
       </div>
     </header>

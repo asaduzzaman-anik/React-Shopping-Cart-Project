@@ -74,6 +74,11 @@ function CartDrawer({
         <div className="cart-drawer__body">
           {cart.length === 0 ? (
             <div className="cart-drawer__empty">
+              <img
+                className="cart-drawer__empty-image"
+                src="/images/empty-cart.png"
+                alt=""
+              />
               <p>Your Amazon Cart is empty</p>
               <p className="cart-drawer__empty-hint">
                 Browse products and add items to get started.
