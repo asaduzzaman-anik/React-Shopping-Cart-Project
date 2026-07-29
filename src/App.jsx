@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import CartDrawer from './components/CartDrawer'
 import Toast from './components/Toast'
 import Home from './pages/Home'
@@ -121,9 +122,7 @@ function App() {
           />
         </Routes>
       </main>
-      <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} React Shopping Cart Project</p>
-      </footer>
+      <Footer />
     </>
   )
 }

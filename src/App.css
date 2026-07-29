@@ -1033,12 +1033,163 @@
 
 /* ========== Footer ========== */
 .footer {
-  background: var(--header-bg-secondary);
-  color: #ddd;
-  text-align: center;
-  padding: 24px 16px;
-  font-size: 0.8rem;
   margin-top: auto;
+  background: #0b1220;
+  color: #c9d1d9;
+}
+
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px 24px;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 700px) {
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 40px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer__grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1.3fr;
+    gap: 40px;
+  }
+}
+
+.footer__logo {
+  height: 28px;
+  width: auto;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.footer__tagline {
+  margin: 0 0 20px;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #9aa4b2;
+  max-width: 280px;
+}
+
+.footer__social-label {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer__social {
+  color: #fff;
+  display: inline-flex;
+}
+
+.footer__social svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer__social:hover {
+  color: #febd69;
+}
+
+.footer__heading {
+  margin: 0 0 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__links a {
+  color: #9aa4b2;
+  font-size: 0.9rem;
+}
+
+.footer__links a:hover {
+  color: #fff;
+}
+
+.footer__newsletter-text {
+  margin: 0 0 14px;
+  font-size: 0.875rem;
+  color: #9aa4b2;
+  line-height: 1.45;
+}
+
+.footer__newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__email {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #4b5568;
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  font-size: 0.875rem;
+}
+
+.footer__email::placeholder {
+  color: #8b95a5;
+}
+
+.footer__email:focus {
+  outline: none;
+  border-color: #6c63ff;
+}
+
+.footer__subscribe {
+  width: 100%;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #6c63ff;
+  color: #fff;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer__subscribe:hover {
+  background: #5a52e0;
+}
+
+.footer__copy {
+  margin: 0;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: #7a8494;
 }
 
 /* ========== Responsive header ========== */
