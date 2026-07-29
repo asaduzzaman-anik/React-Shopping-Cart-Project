@@ -1,14 +1,18 @@
 # React Shopping Cart Project
 
-An Amazon-inspired shopping cart application built with React and Vite. Browse gaming desktop PCs, add items to your cart, adjust quantities, and view live totals — all with a responsive layout for desktop and mobile.
+An Amazon-inspired shopping cart application built with React and Vite. Browse smartphones, add items to your cart, adjust quantities, apply a promo code, and view live totals — with a slide-in cart drawer, empty-cart states, and a responsive layout for desktop and mobile.
 
 ## Features
 
-- Product grid with image, name, price, and category
-- Add products to the shopping cart
+- Product grid with local images, name, price, category, and seller
+- Add products to the shopping cart with toast notifications
+- Slide-in cart drawer from the navbar
+- Dedicated cart page with order summary and promo code field
 - Increase / decrease item quantity
-- Remove products from the cart
+- Remove individual products or clear the entire cart
 - Live total item count and cart price
+- Empty-cart UI with illustration on the drawer and cart page
+- Professional multi-column footer with newsletter signup
 - Reusable React components and `useState` hooks
 - Responsive design for desktop and mobile
 
@@ -24,7 +28,7 @@ An Amazon-inspired shopping cart application built with React and Vite. Browse g
 1. Clone the repository:
 
 ```bash
-git clone <YOUR_GITHUB_REPO_URL>
+git clone https://github.com/asaduzzaman-anik/React-Shopping-Cart-Project.git
 cd react-shopping-cart-project
 ```
 
@@ -53,22 +57,20 @@ npm run lint     # Run ESLint
 ## Project Structure
 
 ```
+public/
+  images/           # Logo, empty-cart art, and product photos
 src/
-  components/     # Reusable UI components (Header, ProductCard, CartItem, etc.)
-  data/           # Static product data
-  pages/          # Home and Cart pages
-  App.jsx         # Cart state (useState) and routing
-  main.jsx        # App entry point
+  components/       # Header, Footer, ProductCard, CartDrawer, CartItem, etc.
+  data/             # Static product catalog (phones)
+  pages/            # Home and Cart pages
+  App.jsx           # Cart state (useState) and routing
+  main.jsx          # App entry point
 ```
 
 ## Links
 
-- **GitHub repository:** [Add your GitHub repository URL here]
-- **Live project:** [Add your live deployment URL here]
-
-## Reference
-
-Design and functionality inspired by: [https://startling-beijinho-72802b.netlify.app/](https://startling-beijinho-72802b.netlify.app/)
+- **GitHub repository:** https://github.com/asaduzzaman-anik/React-Shopping-Cart-Project.git
+- **Live project:** https://react-shopping-cart-project-anik.netlify.app
 
 ## License
 
